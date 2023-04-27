@@ -4,7 +4,7 @@
 
 moeful js music player
 
-![screenshot of three players in different colors](https://natu.moe/supermeowplayer/screenshot.png)
+<img src="https://natu.moe/supermeowplayer/screenshot1.png" width=262 height=193 />
 
 usage: (see [natu.moe](https://natu.moe) for irl example)
 
