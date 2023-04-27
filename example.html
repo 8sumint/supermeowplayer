@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <style>
+        /* hotlinked example webfonts won't work unless you host it :/ */
+        @font-face {
+            font-family: dos;
+            src: url("https://natu.moe/fonts/Web437_DOS-V_re_JPN16.woff");
+            font-display: block;
+        }
+
+        @font-face {
+            font-family: dostwn;
+            src: url("https://natu.moe/fonts/Web437_DOS-V_TWN16.woff");
+            font-display: block;
+        }
+
+        body {
+            background-color: rgb(30, 34, 87);
+            color: #eee;
+            font-size: 16px;
+            padding: 8px;
+            font-family: dos, monospace;
+        }
+
+        meowplayer p {
+            font-family: dostwn, sans-serif;
+        }
+
+        a {
+            color: rgb(0, 132, 255);
+        }
+    </style>
+
+    <script type="text/javascript" src="supermeowplayer.js"></script>
+    <link rel="stylesheet" href="supermeowplayer.css" type="text/css">
+</head>
+
+<body>
+    <p>live cutely always: meowplayer example page</p>
+    <meowplayer canpause style="color: #fdf" title="<a href='demo.mp3'>demo.mp3</a>  " animsrc="demo.anim">
+        <audio src="demo.mp3?" preload="metadata"></audio>
+    </meowplayer>
+
+    <p>
+        volume: 
+        <br>
+        <input type="range" id="mp-volume" oninput="on_global_volume_update()" min="10" max="100" value="90">
+    </p>
+
+    <p><a href="demo.anim">animation file</a></p>
+
+</body>
+
+</html>
