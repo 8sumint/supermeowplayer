@@ -239,7 +239,7 @@ function p_fadeout(audio) {
 	let vw = document.getElementById('mp-volume');
 	let global_vol = 100;
 	if (vw) {
-		let global_vol = vw.value;
+		global_vol = vw.value;
 	}
 	let real_vol = audio.parentElement.getAttribute('vol') * global_vol / 100;
 
@@ -261,7 +261,7 @@ function p_fadein(audio) {
 	let vw = document.getElementById('mp-volume');
 	let global_vol = 100;
 	if (vw) {
-		let global_vol = vw.value;
+		global_vol = vw.value;
 	}
 	let real_vol = audio.parentElement.getAttribute('vol') * global_vol / 100;
 	if (audio.volume >= real_vol || audio.volume + 0.05 >= 1) {
